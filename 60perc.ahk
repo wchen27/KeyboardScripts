@@ -8,7 +8,6 @@ CapsLock::RCtrl
 >^d::Send {Media_Next}
 >^g::Send {Volume_Up}
 >^f::Send {Volume_Down}
->^c::send {CapsLock}
 
 
 ; Rebind hjkl to arrow keys
