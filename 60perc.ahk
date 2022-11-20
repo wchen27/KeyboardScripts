@@ -1,9 +1,10 @@
+
 ; Rebind CapsLock to be useful
 CapsLock::RCtrl
 
-; Rebind CapsLock to RCtrl + c and RCtrl + C
->^c::Send {CapsLock}
->^C::Send {CapsLock}
+; Rebind RCtrl + c to CapsLock
+>^c::CapsLock
+>^C::CapsLock
 
 
 ; Media Keys
@@ -12,6 +13,9 @@ CapsLock::RCtrl
 >^d::Send {Media_Next}
 >^g::Send {Volume_Up}
 >^f::Send {Volume_Down}
+
+; Bind Ctrl + Space to always on top
+^Space::WinSet, AlwaysOnTop, , A
 
 
 ; Rebind hjkl to arrow keys
