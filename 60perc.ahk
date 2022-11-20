@@ -1,6 +1,10 @@
 ; Rebind CapsLock to be useful
 CapsLock::RCtrl
 
+; Rebind CapsLock to RCtrl + c and RCtrl + C
+>^c::Send {CapsLock}
+>^C::Send {CapsLock}
+
 
 ; Media Keys
 >^a::Send {Media_Play_Pause}
