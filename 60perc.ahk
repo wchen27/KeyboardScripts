@@ -1,6 +1,8 @@
-
+; Rebind CapsLock to be useful
 CapsLock::RCtrl
-; AutoHotkey Media Keys
+
+
+; Media Keys
 >^a::Send {Media_Play_Pause}
 >^s::Send {Media_Prev}
 >^d::Send {Media_Next}
@@ -8,6 +10,8 @@ CapsLock::RCtrl
 >^f::Send {Volume_Down}
 >^c::send {CapsLock}
 
+
+; Rebind hjkl to arrow keys
 *>^m::Send, % (GetKeyState("Shift", "P") ? "+" : "") . (GetKeyState("LCtrl", "P") ? "^" : "") . "{Delete}"
 *>^k::Send, % (GetKeyState("Shift", "P") ? "+" : "") . (GetKeyState("LCtrl", "P") ? "^" : "") . "{Up}"
 *>^h::Send, % (GetKeyState("Shift", "P") ? "+" : "") . (GetKeyState("LCtrl", "P") ? "^" : "") . "{Left}"
@@ -15,11 +19,10 @@ CapsLock::RCtrl
 *>^l::Send, % (GetKeyState("Shift", "P") ? "+" : "") . (GetKeyState("LCtrl", "P") ? "^" : "") . "{Right}"
 
 
+; Stardew Valley Animation Cancel :3
 #IfWinActive Stardew Valley
 x::
-
 While GetKeyState("x","P")
-
 {
  sendEvent {LButton Down}
  sleep 10
@@ -29,7 +32,5 @@ While GetKeyState("x","P")
  sleep 10
  sendEvent {r Up}{Delete Up}{RShift Up}
 }
-
 sleep 30
-
 return
