@@ -23,7 +23,7 @@ CapsLock::RCtrl
 *>^m::Send, % (GetKeyState("Shift", "P") ? "+" : "") . (GetKeyState("LAlt", "P") ? "!" : "") . (GetKeyState("LCtrl", "P") ? "^" : "") . "{Delete}"
 *>^k::Send, % (GetKeyState("Shift", "P") ? "+" : "") . (GetKeyState("LAlt", "P") ? "!" : "") . (GetKeyState("LCtrl", "P") ? "^" : "") . "{Up}"
 *>^h::Send, % (GetKeyState("Shift", "P") ? "+" : "") . (GetKeyState("LAlt", "P") ? "!" : "") . (GetKeyState("LCtrl", "P") ? "^" : "") . "{Left}"
-*>^j::Send, % (GetKeyState("Shift", "P") ? "+" : "") . ((GetKeyState("LAlt", "P") ? "!" : "") . GetKeyState("LCtrl", "P") ? "^" : "") . "{Down}"
+*>^j::Send, % (GetKeyState("Shift", "P") ? "+" : "") . (GetKeyState("LAlt", "P") ? "!" : "") . (GetKeyState("LCtrl", "P") ? "^" : "") . "{Down}"
 *>^l::Send, % (GetKeyState("Shift", "P") ? "+" : "") . (GetKeyState("LAlt", "P") ? "!" : "") . (GetKeyState("LCtrl", "P") ? "^" : "") . "{Right}"
 
 ; other useful keybinds
